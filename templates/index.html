@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Skin Cancer AI</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <h1>Skin Cancer AI</h1>
+        <p class="sub">Advanced AI Multi-Class Lesion Detection</p>
+
+        <!-- Small Upload Box -->
+        <div class="upload-box">
+            <label class="file-label">
+            Choose Image
+            <input type="file" id="imageInput" accept="image/*">
+        </label>
+            <button class="btn secondary" onclick="openCamera()">📷 Camera</button>
+            <button class="btn primary" onclick="analyze()">Analyze</button>
+        </div>
+
+        <!-- Camera Preview -->
+        <div id="cameraBox" class="hidden">
+            <video id="camera" autoplay></video>
+            <button class="btn primary" onclick="capture()">Capture</button>
+        </div>
+
+        <!-- Results -->
+        <div id="result"></div>
+
+        <!-- Report -->
+        <details class="meta">
+            <summary>Generate AI Report</summary>
+            <input id="patientName" placeholder="Patient Name">
+            <input id="age" placeholder="Age">
+            <select id="gender">
+            <option>Male</option>
+            <option>Female</option>
+        </select>
+            <button class="btn primary" onclick="download()">Download PDF</button>
+        </details>
+
+    </div>
+
+    <!-- Chatbot Icon -->
+    <div class="chat-icon" onclick="toggleChat()">💬</div>
+
+    <div class="chatbox hidden" id="chatbox">
+        <div class="chat-header">AI Assistant</div>
+        <div id="chatMessages" class="chat-messages"></div>
+        <input type="text" id="chatInput" placeholder="Ask something..." onkeydown="if(event.key==='Enter') sendMessage()">
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>

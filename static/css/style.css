@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a00ff, #ff0080);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: white;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.sub {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.file-label {
+    background: white;
+    color: #6a00ff;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.file-label input {
+    display: none;
+}
+
+.btn {
+    padding: 8px 14px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary {
+    background: #ff0080;
+    color: white;
+}
+
+.secondary {
+    background: #ffffff;
+    color: #6a00ff;
+}
+
+#cameraBox {
+    margin-top: 15px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.bar {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.fill {
+    height: 10px;
+    background: #00ffcc;
+    width: 0%;
+    transition: width 1s ease-in-out;
+}
+
+.meta {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.meta input,
+.meta select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: none;
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff0080;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 280px;
+    background: white;
+    color: black;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.chat-header {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.chat-messages {
+    height: 150px;
+    overflow-y: auto;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
